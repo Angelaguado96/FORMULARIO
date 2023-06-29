@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Survey Form </title>
+</head>
+<body>
+    <header >
+         <h1 id="titulo-pricipal"><b>MI PROYECTO FORMULARIO</b></h1>
+         <p id="descripcion ">Thank you for taking the time to help us improve the platform:</p>
+    </header>
+    <form id="direccion" method="post"  action="https://www.youtube.com/watch?v=PfU8xX-K9JY&list=RDMM2c1UrLcP6ck&index=15">
+    
+    <fieldset id="caja-pricipal ">
+
+    <div class="group">
+        <label  id="name-label"for="name">Name</label>
+        <input
+         type="text"
+         id="name"
+         name="name"
+         class="form-control"
+         placeholder= " Enter Your Name"
+         required
+         />
+    </div>
+    <div  class="group">
+        <label  id="Email-label"for="Email">Email</label>
+        <input 
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your Email"
+        required
+        class="form-control"
+        />
+    </div>
+    <div class="group">
+        <label id="age-label"for="Age (optional)">Age</label>
+        <input
+         type="number"
+        id="number"
+        name="Age"
+        class="form-control"
+        placeholder="Age"
+        min="18"  
+        max="90"
+        />
+    </div>
+    <div class="group-contro">
+        <p class="titulo-encuesta">Which option best describes your current role?     
+        </p>
+        
+            <select id="dropdown" name="role" class="despleable-control" required>
+                <option value="select current role">Select Current Role</option>
+                <option value="student">student</option>
+                <option value="full timejob">full timejob </option>
+                <option value="full time learner">full time learner</option>
+                <option value="prefer not to say">prefer not to say</option>
+                <option value="other">other</option>
+            </select>
+            </div>
+            <div class="group-control">
+                <p class="titulo-encuesta">Would you recommend freeCodeCamp to a friend?
+                </p>
+                <label  >
+                <input 
+                type="radio"
+                id="Definitely"
+                name="not sure-maybe-definitely"
+                class="input-radio"
+                />
+               Definitely</label>
+
+               <label >
+                <input 
+                type="radio"
+                id="Maybe"
+                name="not sure-maybe-definitely"
+                class="input-radio"
+                />
+                Maybe</label>
+
+                <label >
+                    <input 
+                    type="radio"
+                    id="Not-sure"
+                    name="not sure-maybe-definitely"
+                    class="input-radio"
+                    />
+                    Not sure </label>
+            </div>
+            <div class="group-contro" >
+                <p class="titulo-encuesta" > What is your favorite feature of freeCodeCamp?
+                </p>
+                <select class="despleable-control">
+                    <option value="selecr un option">Selecr un Option</option> </option>
+                    <option value="challenges">challenges</option>
+                    <option value="projects">projects</option>
+                    <option value="communnity">communnity</option>
+                    <option value="open source">open source</option>
+                </select>
+                <div class="group-control">
+                    <p class="titulo-encuesta">What would you like to see improved? (Check all that apply)
+                    </p>
+                    <label class="pegado" >  
+                    <input 
+                    type="checkbox"
+                    id="improved"
+                    value="Front-end Projects"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Front-end Projects</label>  
+                </div>
+                <div class="group-control">
+                    <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id="Projects"
+                    value="Back-end Projects"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Back-end Projects</label>
+                </div>
+                <div class="group-control">
+                    <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id="Visualization"
+                    value="Data Visualization"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Data Visualization</label>
+                </div>
+                <div class="group-control">
+                    <label class="pegado" >
+                    <input 
+                    type="checkbox"
+                    id="Challenges"
+                    value="Challenges"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Challenges</label>
+                </div>
+                <div class="group-control">
+                    <label class="pegado" >
+                    <input 
+                    type="checkbox"
+                    id=" Open Source Community"
+                    value=" Open Source Community"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Open Source Community</label>
+                </div>
+                <div class="group-control">
+                <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id="  Gitter help rooms"
+                    value="  Gitter help rooms"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Gitter help rooms</label>
+                </div>
+                <div class="group-control">
+                <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id="Videos"
+                    value="Videos"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Videos</label>
+                </div>
+                <div class="group-control">
+                <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id="City Meetups"
+                    value="City Meetups"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    City Meetups</label>
+                </div>
+                <div class="group-control">
+                <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id=" Wiki"
+                    value=" Wiki"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Wiki</label>
+                </div >
+                <div class="group-control">
+                <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id=" Forum"
+                    value="Forum"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Forum</label>
+                </div>
+                <div class="group-control">
+                    <label class="pegado">
+                    <input 
+                    type="checkbox"
+                    id="Additional Courses"
+                    value="Additional Courses"
+                    name="prefer"
+                    class="input-chekbox"/>
+                    Additional Courses</label>
+                </div>
+                <div class="group-control">
+                    <label class="any"  for="bio" > Any comments or suggestions?:</label>
+                    <textarea 
+                     name="bio" 
+                      id="bio" 
+                      rows="3" cols="30" 
+                      placeholder="ente your commentshere  ..."></textarea> 
+            
+                </div>
+                <div class="group-control">
+                    <label >
+                    <input
+                     type="submit" 
+                     name="submit"
+                     value="submit" 
+                     id="submit"
+                    />
+                     
+                </label>
+                </div>
+            </fieldset>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</form >
+    </html>
+</body>
+  
